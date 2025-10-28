@@ -21,28 +21,42 @@ Track your daily progress, challenges, and learnings here. Update this at the en
 
 ---
 
-## 📅 [Date] - Day 1: Setup
+## 📅 October 28, 2025 - Day 1: Setup
 
 **Today's Goal:**
-- [ ] Create folder structure
-- [ ] Get Redis running
-- [ ] Create shared types
+- [x] Create folder structure
+- [x] Get Redis running
+- [x] Create shared types
 - [ ] Basic server responding to /health
 
 **What I Built:**
-- 
+- Complete monorepo folder structure (apps, services, packages, docs)
+- Docker Compose configuration for Redis
+- Redis container running and responding to PONG
+- Shared TypeScript types package with FollowUpPayload, AgentQuestions, and Socket.IO event interfaces
+- pnpm workspace configuration
 
 **Problems I Hit:**
-- 
+- PowerShell here-string formatting for docker-compose.yml had extra spaces
+- Had to understand the difference between pnpm init defaults vs what's needed for TypeScript package
 
 **Solutions I Found:**
-- 
+- Used file creation tool to generate properly formatted docker-compose.yml
+- Learned that shared types package needs main/types/exports pointing to .ts files, not .js
 
 **Tomorrow's Plan:**
-- 
+- Complete Step 4: Create basic Node.js server with /health endpoint
+- Start Day 2: Build Reviewer React app
+- Get WebSocket connections working
 
 **Notes:**
-- 
+- Michael clarified timeline - needs to be done in 2-3 days (first come first serve)
+- Using gpt-4o-mini for cost efficiency
+- Simple XREAD for Redis (no consumer groups needed)
+- Web Speech API is acceptable for voice capture
+- Component diagram preferred for architecture
+
+**Time spent today:** ~2 hours
 
 ---
 
